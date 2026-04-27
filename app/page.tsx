@@ -1,21 +1,22 @@
 import { Hero } from "./components/Hero";
+import SustainableEngineering from "./components/sustainable-engineering";
 import { Navbar } from "./components/Navbar";
 
 export default function Home() {
   return (
     <div className="relative min-h-screen w-full text-white overflow-hidden">
-      
-      <Hero 
-        videoSrc="/assets/hero_background.mp4" 
-        gifSrc="/assets/umbrella_preview.gif" 
-      />
 
+      <Hero
+        videoSrc="/assets/hero_background.mp4"
+        gifSrc="/assets/umbrella_preview.gif"
+      />
+      <SustainableEngineering />
       {/* FULL WIDTH FIXED BOTTOM TYPE */}
       <div className="fixed bottom-0 left-0 w-full z-50 bg-[#004aad]/90 backdrop-blur-md border-t border-white/10">
-        
+
         {/* CENTERED CONTENT - MAX-W-5XL */}
         <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-          
+
           {/* Left Side */}
           <div className="flex items-center gap-4">
             <div className="w-1.5 h-1.5 rounded-full bg-[#1B79EE] animate-pulse"></div>
@@ -37,7 +38,7 @@ export default function Home() {
 
         </div>
       </div>
-      
+
     </div>
   );
 }
