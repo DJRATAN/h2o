@@ -1,6 +1,7 @@
 import { Hero } from "./components/Hero";
 import SustainableEngineering from "./components/sustainable-engineering";
 import { Navbar } from "./components/Navbar";
+import ComprehensivePavingRisersMapped from "./components/CombinedRiserSolutions";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
         gifSrc="/assets/umbrella_preview.gif"
       />
       <SustainableEngineering />
+      <ComprehensivePavingRisersMapped/>
       {/* FULL WIDTH FIXED BOTTOM TYPE */}
       <div className="fixed bottom-0 left-0 w-full z-50 bg-[#004aad]/90 backdrop-blur-md border-t border-white/10">
 
