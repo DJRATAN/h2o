@@ -7,7 +7,7 @@ interface HeroProps {
 
 export const Hero = ({ videoSrc, gifSrc }: HeroProps) => {
   return (
-    <main className="relative flex flex-col items-center justify-center min-h-screen px-4 pt-20">
+    <main className="relative pt-48 flex flex-col items-center justify-center min-h-screen max-w-400 mx-auto px-4 sm:px-6 lg:px-8">
       
       {/* 1. BACKGROUND VIDEO */}
       <div className="fixed inset-0 -z-10 overflow-hidden bg-black"> {/* Added bg-black for better contrast while loading */}
@@ -50,7 +50,7 @@ export const Hero = ({ videoSrc, gifSrc }: HeroProps) => {
         </h2>
         <div className="flex items-center justify-center gap-4">
           <div className="h-[1px] w-12 bg-[#1B79EE]/50"></div>
-          <p className="text-[#1B79EE] text-[10px] uppercase tracking-[0.8em] font-black">
+          <p className="text-[#1B79EE] pb-4 text-[10px] uppercase tracking-[0.8em] font-black">
             Industrial Water Innovation
           </p>
           <div className="h-[1px] w-12 bg-[#1B79EE]/50"></div>

@@ -45,9 +45,7 @@ const RISER_SECTIONS = [
     overline: "Discover  H20",
     title: "Data Center Solutions",
     highlightText: "H2O Industries",
-    description: "See how our water management solutions are helping cutting- edge data centers power the future.",
-    // FIXED: Removed the extra space in the filename below
-    // video: "/assets/videos/139719_Large wave crashing in the ocean_By_Olivier_Sautet_Artlist_HD.mp4",
+    description: "See how our water management solutions are helping cutting- edge data centers power the future.", 
     video: "/assets/videos/139719_Large wave crashing in the ocean _By_Olivier_Sautet_Artlist_HD.mp4",
 
     features: [
@@ -127,7 +125,7 @@ export default function ComprehensivePavingRisersMapped() {
               <div className="absolute top-[-20%] right-[-10%] w-[600px] h-[600px] bg-[#004aad]/10 rounded-full blur-[120px] pointer-events-none z-0"></div>
             )}
 
-            <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+            <div className="w-full mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
 
                 {/* --- VIDEO COLUMN --- */}
@@ -149,7 +147,7 @@ export default function ComprehensivePavingRisersMapped() {
                     <h4 className={`font-bold text-sm uppercase tracking-[0.2em] ${isDark ? 'text-zinc-400' : 'text-[#004aad]'}`}>
                       {section.overline}
                     </h4>
-                    <h2 className="text-4xl md:text-5xl font-black leading-tight">
+                    <h2 className="text-4xl md:text-5xl text-slate-600 font-black leading-tight">
                       {section.title} <br /> <span className="text-[#004aad]">{section.highlightText}</span>
                     </h2>
                     <p className={`text-lg ${isDark ? 'text-zinc-400' : 'text-slate-600'}`}>
@@ -161,8 +159,8 @@ export default function ComprehensivePavingRisersMapped() {
                     <div className={`grid grid-cols-1 sm:grid-cols-2 gap-6 pt-4 ${isDark ? 'border-t border-zinc-800' : ''}`}>
                       {section.features.map((feat, i) => (
                         <div key={i} className="flex items-start gap-4">
-                          <div className={`h-10 w-10 shrink-0 rounded-lg flex items-center justify-center ${isDark ? 'bg-zinc-800' : 'bg-[#0F0F0F] text-white'}`}>
-                            {renderIcon(feat.icon, `w-6 h-6 text-[#004aad]`)}
+                          <div className={`h-10 w-10 shrink-0 rounded-lg flex items-center justify-center ${isDark ? 'bg-zinc-800' : 'bg-[#004aad] text-white'}`}>
+                            {renderIcon(feat.icon, `w-6 h-6 text-white`)}
                           </div>
                           <div>
                             <h5 className={`font-bold ${isDark ? 'text-white' : 'text-slate-900'}`}>{feat.title}</h5>

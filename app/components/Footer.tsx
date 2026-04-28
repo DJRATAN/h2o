@@ -7,7 +7,7 @@ export const Footer = () => {
 
   return (
     <footer className="w-full bg-white text-[#004aad] pt-24 pb-12 border-t border-gray-100">
-      <div className="max-w-7xl mx-auto px-10">
+      <div className="max-w-400 mx-auto px-4 sm:px-6 lg:px-8 ">
         
         {/* Top Section: Logo & Statement */}
         <div className="flex flex-col md:flex-row justify-between items-start mb-20 gap-10">
