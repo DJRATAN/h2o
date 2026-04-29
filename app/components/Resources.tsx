@@ -35,7 +35,7 @@ const resourceData = [
 
 export const Resources = () => {
   return (
-    <section className="w-full bg-white py-24">
+    <section className="w-full bg-white  py-4">
       <div className="max-w-400 mx-auto px-4 sm:px-6 lg:px-8 ">
         
         {/* Section Header - Slate & Dark Blue */}

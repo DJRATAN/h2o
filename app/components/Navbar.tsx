@@ -12,7 +12,7 @@ const menu = [
 
 export const Navbar = () => {
   return (
-    <nav className="fixed top-0 w-full z-50 flex items-center justify-between px-10 py-0 bg-white shadow-sm border-b border-slate-100 h-[100px]">
+    <nav className="fixed top-0 w-full z-50 flex items-center justify-between px-8 py-0 bg-white shadow-sm border-b border-slate-100 h-[100px]">
       
       {/* LEFT: Logo - Height reduced to 55px to keep nav slim */}
       <div className="flex items-center h-full">
