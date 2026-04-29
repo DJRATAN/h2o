@@ -1,9 +1,11 @@
 import { Hero } from "./components/Hero";
 import SustainableEngineering from "./components/sustainable-engineering";
 import { Navbar } from "./components/Navbar";
+ import { Resources } from "./components/Resources"; 
+import { Heros } from "./Hero";
 import ComprehensivePavingRisersMapped from "./components/CombinedRiserSolutions";
-import { Resources } from "./components/Resources";
-
+import { FullWidthShowcase } from "./components/FullWidthShowcase";
+  
 export default function Home() {
   return (
     <div className="relative min-h-screen w-full text-white overflow-hidden">
@@ -14,7 +16,8 @@ export default function Home() {
       />
       <SustainableEngineering />
       <ComprehensivePavingRisersMapped />
-      <Resources />
+      <Resources /> 
+      {/* <FullWidthShowcase/> */}
       {/* FULL WIDTH FIXED BOTTOM TYPE */}
       <div className="fixed bottom-0 left-0 w-full z-50 bg-[#004aad]/90 backdrop-blur-md border-t border-white/10">
 
