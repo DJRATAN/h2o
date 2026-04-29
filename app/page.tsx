@@ -17,7 +17,8 @@ export default function Home() {
       <SustainableEngineering />
       <ComprehensivePavingRisersMapped />
       <Resources /> 
-      {/* <FullWidthShowcase/> */}
+      <FullWidthShowcase/>
+      
       {/* FULL WIDTH FIXED BOTTOM TYPE */}
       <div className="fixed bottom-0 left-0 w-full z-50 bg-[#004aad]/90 backdrop-blur-md border-t border-white/10">
 
