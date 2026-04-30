@@ -7,6 +7,7 @@ import ComprehensivePavingRisersMapped from "./components/CombinedRiserSolutions
 import { FullWidthShowcase } from "./components/FullWidthShowcase";
 import { IndustrySegments } from "./components/IndustrySegments";
 import AboutCompany from "./components/AboutCompany";
+import Resourcess from "./components/Resourcess";
 
 export default function Home() {
   return (
@@ -16,12 +17,13 @@ export default function Home() {
         videoSrc="/assets/hero_background.mp4"
         gifSrc="/assets/umbrella_preview.gif"
       />
+      <Resourcess/>
       <SustainableEngineering />
       {/* <ComprehensivePavingRisersMapped /> */}
       <Resources />
       <FullWidthShowcase />
       <IndustrySegments />
-      {/* <Heros/> */}
+      <Heros/>
       <AboutCompany />
       {/* FULL WIDTH FIXED BOTTOM TYPE */}
       <div className="fixed bottom-0 left-0 w-full z-50 bg-[#004aad]/90 backdrop-blur-md border-t border-white/10">
@@ -42,12 +44,11 @@ export default function Home() {
             <p className="text-[#1B79EE] text-[10px] font-black uppercase tracking-[0.4em]">
               Secure Data Archive
             </p>
-            <div className="hidden md:block h-3 w-[1px] bg-white/20"></div>
+            <div className="hidden md:block h-3 w-px bg-white/20"></div>
             <p className="hidden md:block text-[9px] text-white/50 uppercase tracking-widest">
               Global Compliance
             </p>
           </div>
-
         </div>
       </div>
 
