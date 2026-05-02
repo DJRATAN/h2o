@@ -13,7 +13,7 @@ const menu = [
 export const Navbar = () => {
   return (
     
-    <nav className="relative top-20 w-full z-50 flex items-center justify-between px-8 py-0 bg-white shadow-sm border-b border-slate-100 h-[100px]">
+    <nav className="relative top-12 w-full z-50 flex items-center justify-between px-8 py-0 bg-white shadow-sm border-b border-slate-100 h-[100px]">
 
       {/* LEFT: Menu Items */}
       <div className="hidden lg:flex items-center gap-10 text-sm font-bold uppercase tracking-[0.2em] text-slate-600">
