@@ -29,6 +29,6 @@
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts",
     "**/*.mts"
-, "../../(submenu)/CombinedRiserSolutions.tsx", "app/components/FullWidthShowcase.tsx", "../../(submenu)/IndustrySegments.tsx", "../../(submenu)/ProductGrid.tsx", "../../(submenu)/Resources.tsx"  ],
+, "../../(submenu)/CombinedRiserSolutions.tsx", "app/components/FullWidthShowcase.tsx", "../../(submenu)/IndustrySegments.tsx", "app/components/ProductGrid.tsx", "app/Resources.tsx"  ],
   "exclude": ["node_modules"]
 }

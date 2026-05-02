@@ -173,7 +173,7 @@ export default function ComprehensivePavingRisersMapped() {
 
                   <div className="pt-4">
                     <Link href={section.buttonLink}>
-                      <Button className={`h-12 px-8 font-bold uppercase tracking-wider transition-all ${isDark ? 'bg-white text-zinc-950 hover:bg-[#004aad] hover:text-white' : 'bg-[#004aad] text-white hover:bg-[#0F0F0F]'}`}>
+                      <Button className={`h-12 px-8 font-bold uppercase tracking-wider transition-all ${isDark ? 'bg-white text-zinc-950 hover:bg-[#004aad] hover:text-white' : 'bg-[#004aad] text-white hover:bg-[#1B79EE]'}`}>
                         {section.buttonText} <ArrowRight className="ml-2 h-4 w-4" />
                       </Button>
                     </Link>

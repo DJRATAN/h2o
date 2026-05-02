@@ -7,7 +7,9 @@ import ComprehensivePavingRisersMapped from "./components/CombinedRiserSolutions
 import { FullWidthShowcase } from "./components/FullWidthShowcase";
 import { IndustrySegments } from "./components/IndustrySegments";
 import AboutCompany from "./components/AboutCompany";
-import Resourcess from "./components/Resourcess";
+ import { InfrastructureFeatures } from "./components/InfrastructureFeatures";
+import { ProductGrid } from "./components/ProductGrid";
+import { Resourcess } from "./components/Resourcess";
 
 export default function Home() {
   return (
@@ -17,14 +19,15 @@ export default function Home() {
         videoSrc="/assets/hero_background.mp4"
         gifSrc="/assets/umbrella_preview.gif"
       />
-      <Resourcess/>
+      {/* <Resourcess/> */}
       <SustainableEngineering />
-      {/* <ComprehensivePavingRisersMapped /> */}
+      <ComprehensivePavingRisersMapped />
       <Resources />
       <FullWidthShowcase />
       <IndustrySegments />
       <Heros/>
-      <AboutCompany />
+      <AboutCompany /> 
+      {/* <ProductGrid/> */}
       {/* FULL WIDTH FIXED BOTTOM TYPE */}
       <div className="fixed bottom-0 left-0 w-full z-50 bg-[#004aad]/90 backdrop-blur-md border-t border-white/10">
 

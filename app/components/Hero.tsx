@@ -16,7 +16,7 @@ export const Hero = ({ videoSrc, gifSrc }: HeroProps) => {
           loop 
           muted 
           playsInline // Essential for iOS/Safari background videos
-          className="w-full h-full object-cover brightness-[0.4] pointer-events-none"
+          className="w-full h-full object-cover brightness-200 pointer-events-none"
         >
           <source src={videoSrc} type="video/mp4" />
           Your browser does not support the video tag.
@@ -28,7 +28,7 @@ export const Hero = ({ videoSrc, gifSrc }: HeroProps) => {
         <div className="absolute inset-0 z-20 pointer-events-none border-[18px] border-[#004aad]/30 rounded-[2rem] backdrop-blur-[1px]">
            <div className="absolute inset-0 border border-[#1B79EE]/40 rounded-[2rem]"></div>
            <div className="absolute top-4 left-6 opacity-40">
-              <span className="text-[9px] uppercase tracking-[0.4em] font-bold text-white">Asset Preview Mode</span>
+              <span className="text-[9px] uppercase tracking-[0.4em] font-bold text-[#1B79EE]">Asset Preview Mode</span>
            </div>
         </div>
 
@@ -38,7 +38,7 @@ export const Hero = ({ videoSrc, gifSrc }: HeroProps) => {
           <img 
             src={gifSrc} 
             alt="H2O Industry Content" 
-            className="w-full h-auto rounded-[1.2rem] opacity-80 group-hover:opacity-100 transition-opacity duration-1000"
+            className="w-full h-auto rounded-[1.2rem]"
           />
         </div>
       </div>

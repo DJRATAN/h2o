@@ -4,6 +4,7 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 import { Navbar } from "./components/Navbar";
 import { Footer } from "./components/Footer";
+import TopNavbarr from "./components/top-navbarr";
 
 const inter = Inter({subsets:['latin'],variable:'--font-sans'});
 
@@ -43,7 +44,9 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col">
         <Navbar/>
+        {/* <TopNavbarr/> */}
         {children}
+        
         <Footer/>
       </body>
     </html>

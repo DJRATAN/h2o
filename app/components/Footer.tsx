@@ -6,7 +6,7 @@ export const Footer = () => {
   const darkBlue = "#004aad";
 
   return (
-    <footer className="w-full bg-white text-[#004aad] pt-24 pb-12 border-t border-gray-100">
+    <footer className="w-full bg-white text-[#004aad] pt-24 pb-12 border-t border-gray-800">
       <div className="max-w-400 mx-auto px-4 sm:px-6 lg:px-8 ">
         
         {/* Top Section: Logo & Statement */}
@@ -19,7 +19,7 @@ export const Footer = () => {
               height={40} 
               className="object-contain"
             />
-            <p className="text-[13px] leading-relaxed font-medium text-[#1B79EE] uppercase tracking-wider">
+            <p className="text-lg leading-relaxed font-medium text-[#1B79EE] uppercase tracking-wider">
               Advanced filtration technology for global industrial transformation.
             </p>
           </div>
