@@ -35,8 +35,8 @@ const resourceData = [
 
 export const Resources = () => {
   return (
-    <section className="w-full bg-white  py-4">
-      <div className="max-w-400 mx-auto px-4 sm:px-6 lg:px-8 ">
+    <section className="bg-white  py-4">
+      <div className="w-full mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header - Slate & Dark Blue */}
         <div className="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">

@@ -3,7 +3,7 @@ import React from 'react'
 
 const AboutCompany = () => {
     return (
-        <div className='flex py-8 bg-white max-w-400 mx-auto px-4 sm:px-6 lg:px-8 gap-10'>
+        <div className='flex py-8 bg-white w-full mx-auto px-4 sm:px-6 lg:px-8'>
             <section className='flex flex-col gap-8'>
                 <div>
                     <Button className="bg-[#1B79EE] hover:bg-[#004aad] text-white rounded-none px-4 py-6 font-black uppercase tracking-[0.3em] transition-all shadow-xl shadow-[#1B79EE]/20">

@@ -41,7 +41,7 @@ export const IndustrySegments = () => {
       {/* Subtle Top Border */}
       <div className="absolute top-0 left-0 w-full h-px bg-slate-100"></div>
 
-      <div className="max-w-400 mx-auto px-4 sm:px-6 lg:px-8 ">
+      <div className="w-full mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="flex flex-col md:flex-row justify-between items-end gap-8 mb-24">
           <div className="max-w-2xl space-y-6">

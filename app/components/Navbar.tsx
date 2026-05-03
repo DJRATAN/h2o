@@ -31,11 +31,11 @@ export const Navbar = () => {
       {/* MIDDLE: Logo - Centered and medium-based scaling */}
       <div className="absolute left-1/2 py-2 -translate-x-1/2 flex items-center h-full">
         <Image
-          src="/assets/H2O LOGO PNG.png"
+          src="/assets/h2o LOGO NEW UPDATED.png"
           alt="H2O Logo"
-          width={200}
-          height={70}
-          className="object-contain h-[65px] w-auto"
+          width={250}
+          height={90}
+          className="object-contain h-24 w-auto"
           priority
         />
       </div>

@@ -10,6 +10,8 @@ import AboutCompany from "./components/AboutCompany";
  import { InfrastructureFeatures } from "./components/InfrastructureFeatures";
 import { ProductGrid } from "./components/ProductGrid";
 import { Resourcess } from "./components/Resourcess";
+import { IndustryIndex } from "./components/IndustryIndex";
+import { UltimateCurbBox } from "./components/UltimateCurbBox";
 
 export default function Home() {
   return (
@@ -19,6 +21,7 @@ export default function Home() {
         videoSrc="/assets/hero_background.mp4"
         gifSrc="/assets/umbrella_preview.gif"
       />
+      <UltimateCurbBox/>
       {/* <Resourcess/> */}
       <SustainableEngineering />
       <ComprehensivePavingRisersMapped />
@@ -27,6 +30,7 @@ export default function Home() {
       <IndustrySegments />
       <Heros/>
       <AboutCompany /> 
+      <IndustryIndex/>
       {/* <ProductGrid/> */}
       {/* FULL WIDTH FIXED BOTTOM TYPE */}
       <div className="fixed bottom-0 left-0 w-full z-50 bg-[#004aad]/90 backdrop-blur-md border-t border-white/10">
