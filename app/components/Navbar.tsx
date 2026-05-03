@@ -13,7 +13,7 @@ const menu = [
 export const Navbar = () => {
   return (
     
-    <nav className="relative top-12 w-full z-50 flex items-center justify-between px-8 py-0 bg-white shadow-sm border-b border-slate-100 h-[100px]">
+    <nav className="relative top-8 w-full z-50 flex items-center justify-between px-8 py-0 bg-white shadow-sm border-b border-slate-100 h-[100px]">
 
       {/* LEFT: Menu Items */}
       <div className="hidden lg:flex items-center gap-10 text-sm font-bold uppercase tracking-[0.2em] text-slate-600">
@@ -33,8 +33,8 @@ export const Navbar = () => {
         <Image
           src="/assets/H2O LOGO PNG.png"
           alt="H2O Logo"
-          width={150}
-          height={60}
+          width={200}
+          height={70}
           className="object-contain h-[65px] w-auto"
           priority
         />
