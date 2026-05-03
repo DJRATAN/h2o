@@ -1,3 +1,5 @@
+"use client";
+
 import Image from 'next/image';
 import React from 'react';
 
@@ -8,57 +10,70 @@ interface HeroProps {
 
 export const Hero = ({ videoSrc, gifSrc }: HeroProps) => {
   return (
-    <main className="relative pt-48 flex flex-col items-center justify-center min-h-screen max-w-400 mx-auto px-4 sm:px-6 lg:px-8">
+    <main className="relative pt-48 flex flex-col items-center justify-center min-h-screen mx-auto px-4 sm:px-6 lg:px-8">
 
-      {/* 1. BACKGROUND VIDEO */}
+      {/* 1. BACKGROUND VIDEO (Tinted for better contrast) */}
       <div className="fixed inset-0 -z-10 overflow-hidden">
+        {/* Dark Overlay to pop the Blue UI */}
+        <div className="absolute inset-0 bg-black/40 z-10" /> 
         <video
           autoPlay
           loop
           muted
-          playsInline // Essential for iOS/Safari background videos
-          className="w-full h-full object-cover brightness-100 pointer-events-none"
+          playsInline
+          className="w-full h-full object-cover pointer-events-none brightness-[0.7]"
         >
           <source src={videoSrc} type="video/mp4" />
-          Your browser does not support the video tag.
         </video>
       </div>
 
-      {/* 2. PROTECTED CENTER CONTENT */}
-      <div className="relative group">
-        <div className="absolute inset-0 z-20 pointer-events-none border-[9px] border-[#004aad]/30 rounded-[2rem] backdrop-blur-[1px]">
-          <div className="absolute inset-0 border border-[#1B79EE]/40 rounded-[2rem]"></div>
-          <div className="absolute top-4 left-6 opacity-40">
-            <span className="text-[9px] uppercase tracking-[0.4em] font-bold text-[#1B79EE]">Asset Preview Mode</span>
+      {/* 2. CENTER ASSET - CLEAN BLUE FOCUS */}
+      <div className="relative">
+        
+        {/* HIGH-INTENSITY BLUE GLOW */}
+        <div className="absolute -inset-4 bg-[#1B79EE]/20 rounded-[2.5rem] blur-2xl animate-pulse"></div>
+        
+        {/* THE CLEAN BLUE FRAME */}
+        <div className="relative border-2 border-[#1B79EE] bg-transparent p-1 rounded-[2rem] shadow-[0_0_50px_rgba(27,121,238,0.3)] overflow-hidden max-w-[600px]">
+          
+          {/* ASSET PREVIEW LABEL (Minimalist) */}
+          <div className="absolute top-4 left-6 z-30">
+            <span className="text-[8px] uppercase tracking-[0.5em] font-black text-[#1B79EE] bg-white/10 px-2 py-1 backdrop-blur-md">
+              H2O System Focus
+            </span>
           </div>
-        </div>
 
-        <div className="absolute -inset-20 bg-[#1B79EE]/10 rounded-full blur-[120px] opacity-40 group-hover:opacity-60 transition-opacity"></div>
-
-        <div className="relative bg-black/60 backdrop-blur-3xl border border-white/5 p-4 rounded-[2.2rem] shadow-2xl overflow-hidden max-w-[650px]">
+          {/* THE IMAGE/GIF */}
           <Image
-            height={100}
-            width={200}
+            height={400}
+            width={800}
             src={gifSrc}
             alt="H2O Industry Content"
-            className="w-full h-auto rounded-[1.2rem]"
+            className="w-full h-auto rounded-[1.8rem] object-cover"
+            priority
           />
         </div>
+
+        {/* CORNER ACCENTS (Industrial Detail) */}
+        <div className="absolute -top-2 -left-2 w-6 h-6 border-t-2 border-l-2 border-white/50"></div>
+        <div className="absolute -bottom-2 -right-2 w-6 h-6 border-b-2 border-r-2 border-white/50"></div>
       </div>
 
       {/* 3. HERO TEXT */}
-      <div className="mt-14 text-center space-y-6 max-w-4xl">
-        <h2 className="text-5xl md:text-8xl font-black uppercase tracking-tighter italic leading-none">
+      <div className="mt-16 text-center space-y-6 max-w-4xl">
+        <h2 className="text-5xl md:text-8xl font-black uppercase tracking-tighter italic leading-none text-white drop-shadow-2xl">
           Saving Our <span className="text-[#1B79EE]">Oceans</span>
         </h2>
-        <div className="flex items-center justify-center gap-4">
-          <div className="h-[1px] w-12 bg-[#1B79EE]/50"></div>
-          <p className="text-[#1B79EE] pb-4 text-[10px] uppercase tracking-[0.8em] font-black">
+        
+        <div className="flex items-center justify-center gap-6">
+          <div className="h-[2px] w-16 bg-[#1B79EE]"></div>
+          <p className="text-white text-[11px] uppercase tracking-[1em] font-black italic">
             Industrial Water Innovation
           </p>
-          <div className="h-[1px] w-12 bg-[#1B79EE]/50"></div>
+          <div className="h-[2px] w-16 bg-[#1B79EE]"></div>
         </div>
       </div>
+
     </main>
   );
 };
