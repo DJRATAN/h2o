@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 
 interface HeroProps {
@@ -8,15 +9,15 @@ interface HeroProps {
 export const Hero = ({ videoSrc, gifSrc }: HeroProps) => {
   return (
     <main className="relative pt-48 flex flex-col items-center justify-center min-h-screen max-w-400 mx-auto px-4 sm:px-6 lg:px-8">
-      
+
       {/* 1. BACKGROUND VIDEO */}
-      <div className="fixed inset-0 -z-10 overflow-hidden bg-black"> {/* Added bg-black for better contrast while loading */}
-        <video 
-          autoPlay 
-          loop 
-          muted 
+      <div className="fixed inset-0 -z-10 overflow-hidden">
+        <video
+          autoPlay
+          loop
+          muted
           playsInline // Essential for iOS/Safari background videos
-          className="w-full h-full object-cover brightness-200 pointer-events-none"
+          className="w-full h-full object-cover brightness-100 pointer-events-none"
         >
           <source src={videoSrc} type="video/mp4" />
           Your browser does not support the video tag.
@@ -25,19 +26,21 @@ export const Hero = ({ videoSrc, gifSrc }: HeroProps) => {
 
       {/* 2. PROTECTED CENTER CONTENT */}
       <div className="relative group">
-        <div className="absolute inset-0 z-20 pointer-events-none border-[18px] border-[#004aad]/30 rounded-[2rem] backdrop-blur-[1px]">
-           <div className="absolute inset-0 border border-[#1B79EE]/40 rounded-[2rem]"></div>
-           <div className="absolute top-4 left-6 opacity-40">
-              <span className="text-[9px] uppercase tracking-[0.4em] font-bold text-[#1B79EE]">Asset Preview Mode</span>
-           </div>
+        <div className="absolute inset-0 z-20 pointer-events-none border-[9px] border-[#004aad]/30 rounded-[2rem] backdrop-blur-[1px]">
+          <div className="absolute inset-0 border border-[#1B79EE]/40 rounded-[2rem]"></div>
+          <div className="absolute top-4 left-6 opacity-40">
+            <span className="text-[9px] uppercase tracking-[0.4em] font-bold text-[#1B79EE]">Asset Preview Mode</span>
+          </div>
         </div>
 
         <div className="absolute -inset-20 bg-[#1B79EE]/10 rounded-full blur-[120px] opacity-40 group-hover:opacity-60 transition-opacity"></div>
-        
+
         <div className="relative bg-black/60 backdrop-blur-3xl border border-white/5 p-4 rounded-[2.2rem] shadow-2xl overflow-hidden max-w-[650px]">
-          <img 
-            src={gifSrc} 
-            alt="H2O Industry Content" 
+          <Image
+            height={100}
+            width={200}
+            src={gifSrc}
+            alt="H2O Industry Content"
             className="w-full h-auto rounded-[1.2rem]"
           />
         </div>
