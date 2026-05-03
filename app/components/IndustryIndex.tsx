@@ -4,18 +4,18 @@ import React from 'react';
 import { ArrowUpRight, Play, Database } from 'lucide-react';
 
 const h2oCategories = [
-  { title: "Valve Boxes", tag: "Infrastructure", img: "/assets/data/industry/VB - 5028.34.png" },
-  { title: "Curb/Service Boxes", tag: "Utility", img: "/assets/data/industry/1.10.png" },
-  { title: "Valves", tag: "Control Systems", img: "/assets/data/industry/VB - 5030.35.png" },
-  { title: "Cleanouts", tag: "Drainage", img: "/assets/data/industry/VL - 8B.21.png" },
-  { title: "Custom Valve Boxes", tag: "Bespoke", img: "/assets/data/industry/VL - 8B.21.png" },
+  { title: "Valve Boxes", tag: "Infrastructure", img: "/assets/data/industry/VALVE BOXES/6 IN.2 - Copy.png" },
+  { title: "Curb/Service Boxes", tag: "Utility", img: "/assets/data/industry/CURB BOXES/1.2.5 - Copy.png" },
+  { title: "Valves", tag: "Control Systems", img: "/assets/data/industry/VALVES/valve.5.png" },
+  { title: "Cleanouts", tag: "Drainage", img: "/assets/data/industry/CLEANOUTS/1802.1 - Copy.png" },
+  { title: "Custom Valve Boxes", tag: "Bespoke", img: "/assets/data/industry/CUSTOME VALVE BOXES/FLORINDA 1.1.1 - Copy - Copy.png" },
   { title: "Water Works Tools", tag: "Tools", img: "/assets/data/industry/VL - 8B.21.png" },
   { title: "Risers/Extensions", tag: "Adjustments", img: "/assets/data/industry/VL - 8B.21.png" },
-  { title: "Special Application", tag: "Engineering", img: "/assets/data/industry/VL - 8B.21.png" },
-  { title: "Gas Products", tag: "Energy", img: "/assets/data/industry/VL - 8B.21.png" },
+  { title: "Special Application", tag: "Engineering", img: "/assets/data/industry/SPECIAL APPLICATIONS/key.3 - Copy.png" },
+  { title: "Gas Products", tag: "Energy", img: "/assets/data/industry/GAS PROODUCT/MONITERING WELL STATION.12 - Copy.png" },
   { title: "Flanges", tag: "Connection", img: "/assets/data/industry/VL - 8B.21.png" },
   { title: "Meter Boxes", tag: "Measurement", img: "/assets/data/industry/VL - 8B.21.png" },
-  { title: "Three Piece Valve Boxes", tag: "Assembly", img: "/assets/data/industry/VL - 6.3.png" },
+  { title: "Three Piece Valve Boxes", tag: "Assembly", img: "/assets/data/industry/THREE PIS VALVE BOXES/4 valve box.7 - Copy.jpg" },
 ];
 
 export const IndustryIndex = () => {
