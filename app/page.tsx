@@ -7,13 +7,14 @@ import ComprehensivePavingRisersMapped from "./components/CombinedRiserSolutions
 import { FullWidthShowcase } from "./components/FullWidthShowcase";
 import { IndustrySegments } from "./components/IndustrySegments";
 import AboutCompany from "./components/AboutCompany";
- import { InfrastructureFeatures } from "./components/InfrastructureFeatures";
+import { InfrastructureFeatures } from "./components/InfrastructureFeatures";
 import { ProductGrid } from "./components/ProductGrid";
 import { Resourcess } from "./components/Resourcess";
 import { IndustryIndex } from "./components/IndustryIndex";
-import { UltimateCurbBox } from "./components/UltimateCurbBox"; 
+import { UltimateCurbBox } from "./components/UltimateCurbBox";
 import { IndustrialGrid } from "./components/IndustrialGrid";
 import { FullScreenGif } from "./components/FullScreenGif";
+import { TechnicalShowcase } from "./components/TechnicalShowcase";
 
 export default function Home() {
   return (
@@ -22,25 +23,28 @@ export default function Home() {
       <Hero
         videoSrc="/assets/hero_background.mp4"
         gifSrc="/assets/umbrella_preview.gif"
-      /> 
-       <UltimateCurbBox/>
-       <FullScreenGif  gifSrc="/assets/umbrella_preview.gif"/>
-       <IndustrialGrid/>
+      />
+      <UltimateCurbBox />
+      <TechnicalShowcase
+        videoSrc="/assets/hero_background.mp4"
+      />
+      <FullScreenGif gifSrc="/assets/umbrella_preview.gif" />
+      <IndustrialGrid />
       {/* <Resourcess/> */}
       <SustainableEngineering />
       <ComprehensivePavingRisersMapped />
       <Resources />
       <FullWidthShowcase />
       <IndustrySegments />
-      <Heros/>
-      <AboutCompany /> 
-      <IndustryIndex/>
+      <Heros />
+      <AboutCompany />
+      <IndustryIndex />
       {/* <ProductGrid/> */}
       {/* FULL WIDTH FIXED BOTTOM TYPE */}
       <div className="fixed bottom-0 left-0 w-full z-50 bg-[#004aad]/90 backdrop-blur-md border-t border-white/10">
 
         {/* CENTERED CONTENT - MAX-W-5XL */}
-        <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+        <div className="w-full mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
 
           {/* Left Side */}
           <div className="flex items-center gap-4">
